@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: #4A4A4A; 
+    background-color: #F5F5F5; 
+}
+
+nav {
+    background-color: #008CBA; 
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s; 
+}
+
+nav ul li a:hover {
+    background-color: #007B9E; 
+}
+
+.section {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+}
+
+h1, h2, h3 {
+    color: #008CBA; 
+    margin: 5px;
+}
+
+p {
+    line-height: 1.6; 
+    margin: 5px;
+}
+
+.centered-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 50%; 
+}
+
+.map-container iframe {
+    max-width: 100%; 
+    height: 300px; 
+    border-radius: 8px; /
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+    border-left: 4px solid rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    background: url('assets/company-history-gs.png') no-repeat center center; 
+    background-size: calc(100% - 40px);
+    color: #FFF; 
+    border-radius: 8px; 
+}
+
+.milestone {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px; 
+}
+
+.milestone h3, .milestone p {
+    color: #FFF; 
+}
+
+@media (max-width: 600px) {
+    .map-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .section {
+        margin: 20px 10px;
+    }
+}
